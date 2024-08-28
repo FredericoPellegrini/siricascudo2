@@ -109,7 +109,7 @@ main{
 }
 
 aside{
-    background-color: #e0e0e0;
+    background-color: #E8DCEB;
     padding: 20px;
     border: 1px solid #ccc;
     width: 100%;
@@ -130,13 +130,17 @@ aside{
     text-align: center;
 }
 
-.about-me:hover{
+.about-me:hover,
+.popular-post:hover,
+.follow-me:hover{
     cursor: pointer;
-    background-color: #dad7d7;
+    background-color: #C5C2E1;
 }
 
 .about-me h2,
-.popular-post h2 {
+.popular-post h2,
+.follow-me h2 {
+    font-size: 35px;
     font-family: 'Pacifico', cursive;
     color: #A21621;
     text-shadow: 2px 2px 1px #7499c6;
@@ -144,7 +148,8 @@ aside{
 
 
 .about h2,
-.about h3{
+.about h3,
+.popular-post h2{
     margin-bottom: 25px;
 }
 
@@ -158,4 +163,31 @@ aside{
     height: auto;
     display: block;
     margin: 10px 0;
+}
+
+.follow-me h2{
+    text-align: center;
+}
+
+.linksredes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+
+.linksredes a{
+    color: #ce1928;
+}
+
+.linksredes a:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #7499c6;
+}
+
+
+/* */ 
+
+.part1{
+    background-color: red;
 }
