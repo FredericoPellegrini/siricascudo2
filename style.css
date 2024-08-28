@@ -10,12 +10,18 @@
 }
 
 nav{
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
     background-color: #F2F1F6;
+    padding: 0 20px;
 }
+
+.logo{
+    flex: 0 1 auto;
+}
+
 
 .logo h1{
     font-family: 'Krabby Patty', sans-serif;
@@ -30,6 +36,15 @@ nav{
     transform: scale(1.1);
 }
 
+.links{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
 .links a{
     text-decoration: none;
     color: #A21621;
@@ -41,6 +56,10 @@ nav{
 .links a:hover{
     font-weight: bold;
     text-shadow: 1px 1px 1px #7499c6;
+}
+
+.redes{
+    flex: 0 1 auto;
 }
 
 .redes a{
