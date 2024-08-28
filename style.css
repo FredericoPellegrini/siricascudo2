@@ -122,14 +122,21 @@ aside{
     grid-column: 3;
 }
 
-.about-me{
+.about-me,
+.popular-post{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.about-me h2 {
+.about-me:hover{
+    cursor: pointer;
+    background-color: #dad7d7;
+}
+
+.about-me h2,
+.popular-post h2 {
     font-family: 'Pacifico', cursive;
     color: #A21621;
     text-shadow: 2px 2px 1px #7499c6;
