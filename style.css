@@ -4,126 +4,128 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+
+body {
     margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:
+        "header header"
+        "body aside"
+        "footer footer";
+    height: 100vh;
+    gap: 10px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-
-/* Elementos do nav */
+header {
+    grid-area: header;
+    padding: 0;
+}
 
 nav {
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    z-index: 1000; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #F2F1F6;
-    padding: 0 20px; 
+    padding: 10px 20px; 
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.logo {
+    margin-right: auto;
 }
 
-
-.logo{
-    flex: 0 1 auto;
-}
-
-
-.logo h1{
+.logo h1 {
     font-family: 'Krabby Patty', sans-serif;
-    color:#A21621;
+    color: #A21621;
     text-shadow: 4px 4px 1px #7499c6;
     font-size: 50px;
-    margin-left: 40px;
-    
+    margin: 0;
 }
 
-.logo h1:hover{
+.logo h1:hover {
     transform: scale(1.1);
 }
 
-.links{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.links {
     display: flex;
     justify-content: center;
-    width: auto;
-}
-
-.links a{
-    text-decoration: none;
-    color: #A21621;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.links a:hover{
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #7499c6;
-}
-
-.redes{
-    flex: 0 1 auto;
-}
-
-.redes a{
-    color:#A21621;
-    font-size: 20px;
-    margin-right: 40px;
-}
-
-.redes a:hover{
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #7499c6;
-}
-
-/* Fim dos elementos nav */
-
-
-/* asides */ 
-
-
-main{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
-    margin-top: 60px;
-    padding: 20px;
     flex-grow: 1;
 }
 
-.content{
-    grid-column: 2;
+.links a {
+    text-decoration: none;
+    color: #A21621;
+    font-weight: bold;
+    margin: 0 10px; 
+    padding: 10px;
 }
 
-aside{
-    background-color: #E8DCEB;
-    padding: 20px;
-    border: 1px solid #ccc;
+.links a:hover {
+    font-weight: bold;
+    background-color: #A21621;
+    border: 1px solid #a21622a1;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.redes {
+    margin-left: auto;
+}
+
+.redes a {
+    color: #A21621;
+    font-size: 20px;
+}
+
+.redes a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #7499c6;
+}
+
+.body {
+    grid-area: body;
+    padding: 10px;
+    position: relative; 
+}
+
+.area1 {
+    position: relative; /* Não usa absoluto para não ocupar todo o espaço do body */
     width: 100%;
+    height: 100%;
 }
 
+.area1 img {
+    width: 100%;
+    height: auto; /* Ajusta a altura da imagem automaticamente */
+    object-fit: contain; /* Faz com que a imagem seja exibida inteira sem cortar */
+}
 
-.about-me,
-.popular-post,
-.follow-me{
-    grid-column: 3;
+.aside-container {
+    grid-area: aside;
+    display: grid;
+    grid-template-rows: auto;
+    background: #f4f4f4;
+    gap: 10px;
+    padding: 10px;
+}
+
+.aside {
+    background: #ddd;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    padding: 10px;
 }
 
 .about-me,
-.popular-post{
+.popular-post {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +134,7 @@ aside{
 
 .about-me:hover,
 .popular-post:hover,
-.follow-me:hover{
+.follow-me:hover {
     cursor: pointer;
     background-color: #C5C2E1;
 }
@@ -140,54 +142,132 @@ aside{
 .about-me h2,
 .popular-post h2,
 .follow-me h2 {
-    font-size: 35px;
     font-family: 'Pacifico', cursive;
     color: #A21621;
     text-shadow: 2px 2px 1px #7499c6;
+    margin: 2px;
 }
 
-
-.about h2,
-.about h3,
-.popular-post h2{
-    margin-bottom: 25px;
-}
-
-.about-me p{
+.about-me p {
     text-align: justify;
     margin-top: 10px;
 }
 
-.about-me img{
+.about-me h3 {
+    margin: 10px;
+}
+
+.about-me img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
 }
 
-.follow-me h2{
+.follow-me h2 {
     text-align: center;
 }
 
-.linksredes{
+.linksredes {
     display: flex;
     justify-content: space-around;
     font-size: 30px;
 }
 
-
-.linksredes a{
+.linksredes a {
     color: #ce1928;
 }
 
-.linksredes a:hover{
+.linksredes a:hover {
     font-weight: bold;
     text-shadow: 1px 1px 2px #7499c6;
 }
 
 
-/* */ 
 
-.part1{
-    background-color: red;
+
+
+.area1 {
+    position: relative;
+    width: 100%;
+    height: auto; /
+    overflow: hidden; 
+}
+
+.area1 h1{
+    font-family: 'Pacifico', 'Roboto', sans-serif;
+    font-size: 50px;
+    color:white;
+    text-shadow: 4px 3px 1px #A21621;
+}
+
+.area1 p{
+    margin-top: -15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.area1 img {
+    width: 100%; /
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    z-index: 2;
+}
+
+
+/* Efeito serrilhado ajustado */
+.hatch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Garante que o efeito serrilhado fique abaixo do texto */
+}
+
+.team{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.img-team{
+    float: left;
+    width: 50%;
+    box-shadow: 10px 10px 5px rgba(72, 114, 170, 0.5);
+}
+
+.team-texto{
+    margin-left: 55%;
+}
+
+.team-texto h1{
+    text-align: center;
+    font-family: 'Pacifico', sans-serif;
+    color: #A21621;
+    text-shadow: 3px 3px 1px #7499c6;
+    font-size: 40px;
+
+}
+
+.team-texto p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }

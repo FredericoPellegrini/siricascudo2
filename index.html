@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7e3f3eb982.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7e3f3eb982.js" crossorigin="anonymous"></script>
-    <title>Siri Cascudo</title>
+    <title>Layout CSS Grid</title>
 </head>
 <body>
-    
     <header>
         <nav>
             <div class="logo">
@@ -18,47 +17,54 @@
                 <a href="#">Receitas</a>
                 <a href="#">Funcionários</a>
                 <a href="#">Como chegar</a>    
-                <a href="#">Contato</a>
+                <a href="#">Contato</a>            
             </div>
             <div class="redes">
                 <a href="#">
                     <i class="fa-brands fa-instagram"></i>
-                </a>
+                </a>                
             </div>
         </nav>
     </header>
 
-    <main>
-        <div class="content">
 
 
-            <div class="part1">
-                <h1>A casa do Hambúrguer de Siri!</h1>
+    <div class="body">
+        <div class="area1">
+            <img src="imgs/bg1.webp" alt="Imagem de fundo">
+            <div class="hatch"></div>
+            <div class="overlay">
+                <h1>A casa do Hamburger de Siri!</h1>
+                <p>O melhor fast-fost da Fenda do Bikini</p>
             </div>
-
-
-
         </div>
 
+        <div class="team">
+            <img src="imgs/team.png" alt="" class="img-team">
+            <div class="team-texto">
+                <h1>Nosso time</h1>
+                <p>Nosso time tem excelentes profissionais prontos para suprir a sua fome.</p>
+            </div>
+        </div>
+
+    </div>
+    
 
 
-<!-- aside -->
-
-        <aside class="about-me">
-
+    <div class="aside-container">
+        <aside class="aside about-me">
             <h2>Sobre mim</h2>
             <h3>Seu Sirigueijo</h3>
             <img src="imgs/siri1.jpg" alt="">
             <p>Orgulhoso proprietário do Siri Cascudo. No meu restaurante, sirvo o famoso Hambúrguer de Siri, uma iguaria que faz sucesso no fundo do mar. Embora eu adore meu dinheiro e seja um pouco avarento, minha paixão pela culinária e pelo meu restaurante é genuína. Venha experimentar nossas delícias e descubra por que o Siri Cascudo é tão especial!</p>
-        </aside>
-        <aside class="popular-post">
 
+        </aside>
+        <aside class="aside popular-post">
             <h2>Posts Poupulares</h2>
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
             <div class="elfsight-app-d6faaf7c-94f8-4e89-91f7-36229d95ecf9" data-elfsight-app-lazy></div>
-
         </aside>
-        <aside class="follow-me">
+        <aside class="aside follow-me">
             <h2>Redes Sociais</h2>
             <div class="linksredes">
                 <a href="https://www.instagram.com/fredpellegrini/"><i class="fa-brands fa-instagram"></i></a> 
@@ -67,8 +73,8 @@
                 <a href="https://www.reddit.com/user/ericopellegrini/"><i class="fa-brands fa-reddit"></i></a>
             </div>
         </aside>
-    </main>
-
-
+        </aside>
+    </div>
+    <footer>Footer</footer>
 </body>
 </html>
