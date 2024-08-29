@@ -91,3 +91,47 @@ footer {
     padding: 10px;
 }
 
+.bob, .lula, .seu{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.bob{
+    border:1px solid #b45b57;
+    background-color: #da6a64;
+}
+
+.lula{
+    border: 1px solid darkblue;
+    background-color: rgb(3, 3, 92);
+}
+
+.seu{
+    border: 1px solid #000;
+    background-color: #140f0f;
+}
+
+.funcionarios img{
+    width: 250px;
+    height: auto;
+}
+
+.funcionarios .text{
+    overflow-y: auto;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+.funcionarios h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
