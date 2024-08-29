@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/krabby-patty');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #F2F1F6;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-family: 'Krabby Patty', sans-serif;
+    color: #A21621;
+    text-shadow: 4px 4px 1px #7499c6;
+    font-size: 50px;
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color: #A21621;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.links a:hover {
+    background-color: #A21621;
+    border: 1px solid #a21622a1;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.redes a {
+    color: #A21621;
+    font-size: 20px;
+}
+
+.redes a:hover {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #7499c6;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    background-color: #EAEAEA;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
