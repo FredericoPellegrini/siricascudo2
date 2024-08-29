@@ -181,9 +181,6 @@ footer {
 }
 
 
-
-
-
 .area1 {
     position: relative;
     width: 100%;
@@ -230,14 +227,13 @@ footer {
 }
 
 
-/* Efeito serrilhado ajustado */
 .hatch {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Garante que o efeito serrilhado fique abaixo do texto */
+    z-index: 1; 
 }
 
 .team {
@@ -275,9 +271,9 @@ footer {
 }
 
 .rotateburger {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
-    height: 300px; /* Ajuste o tamanho conforme necessário */
-    margin: 40px auto 0; /* Adiciona espaço superior e centraliza horizontalmente */
+    width: 300px; 
+    height: 300px; 
+    margin: 40px auto 0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,10 +283,10 @@ footer {
 .rotateburger img {
     width: 100%;
     height: auto;
-    animation: rotate 10s linear infinite; /* Define a animação de rotação */
+    animation: rotate 10s linear infinite; 
 }
 
-/* Animação de rotação */
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);

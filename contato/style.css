@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Header */
+
 header {
     background-color: #F2F1F6;
     padding: 10px 20px;
@@ -100,7 +100,6 @@ nav {
     text-shadow: 1px 1px 1px #7499c6;
 }
 
-/* Main */
 main {
     display: flex;
     justify-content: center;
@@ -113,7 +112,6 @@ main {
 
 
 
-/* Footer */
 footer {
     background-color: #333;
     color: #ffffff;
